@@ -17,7 +17,3 @@ mod macros;
 
 /// Contains data structures and functions for loading glTF 1.0.
 pub mod v1;
-
-/// Contains data structures and functions for loading glTF 2.0.
-pub mod v2;
-

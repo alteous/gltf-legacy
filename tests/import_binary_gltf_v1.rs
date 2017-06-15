@@ -1,5 +1,5 @@
 
-extern crate gltf;
+extern crate gltf_legacy as gltf;
 
 use std::{fs, io, path};
 

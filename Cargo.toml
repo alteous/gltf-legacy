@@ -1,10 +1,10 @@
 [package]
-name = "gltf"
-version = "0.5.0"
+name = "gltf_legacy"
+version = "0.1.0"
 authors = ["alteous <alteous@outlook.com>"]
-description = "glTF asset loader"
-documentation = "https://docs.rs/gltf"
-repository = "https://github.com/alteous/gltf"
+description = "glTF 1.0 asset loader"
+documentation = "https://docs.rs/gltf_legacy"
+repository = "https://github.com/alteous/gltf_legacy"
 readme = "README.md"
 keywords = ["glTF", "3D", "asset", "model", "scene"]
 license = "MIT/Apache-2.0"

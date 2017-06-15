@@ -6,27 +6,11 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-extern crate gltf;
+extern crate gltf_legacy as gltf;
 
-use gltf::{v1, v2};
+use gltf::v1;
 
 fn main() {
     let path = std::env::args().nth(1).unwrap();
-    match v1::import(&path) {
-        Ok(root) => {
-            println!("glTF version 1.0");
-            println!("{:#?}", root);
-        }
-        Err(_) => {
-            match v2::import(&path) {
-                Ok(root) => {
-                    println!("glTF version 2.0");
-                    println!("{:#?}", root);
-                }
-                Err(err) => {
-                    println!("Error: {:#?}", err);
-                }
-            }
-        }
-    }
+    println!("{:#?}", v1::import(&path));
 }
