@@ -1,10 +1,10 @@
 [package]
-name = "gltf_legacy"
+name = "gltf-legacy"
 version = "0.1.0"
 authors = ["alteous <alteous@outlook.com>"]
 description = "glTF 1.0 asset loader"
-documentation = "https://docs.rs/gltf_legacy"
-repository = "https://github.com/alteous/gltf_legacy"
+documentation = "https://docs.rs/gltf-legacy"
+repository = "https://github.com/alteous/gltf-legacy"
 readme = "README.md"
 keywords = ["glTF", "3D", "asset", "model", "scene"]
 license = "MIT/Apache-2.0"
@@ -24,6 +24,6 @@ extras = []
 KHR_binary_glTF = []
 
 [[example]]
-name = "gltf_display"
+name = "gltf-display"
 path = "examples/display/main.rs"
 

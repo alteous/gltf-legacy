@@ -1,22 +1,22 @@
-# gltf_legacy
+# gltf-legacy
 
 This crate is intended to load [glTF 1.0](https://www.khronos.org/gltf), a file format designed for the efficient transmission of 3D assets. As of 15th June 2017 it is no longer actively maintained.
 
 `rustc` version 1.15 or above is required.
 
-[![Build Status](https://travis-ci.org/alteous/gltf_legacy.svg?branch=master)](https://travis-ci.org/alteous/gltf_legacy)
-[![crates.io](https://img.shields.io/crates/v/gltf_legacy.svg)](https://crates.io/crates/gltf_legacy)
-[![docs.rs](https://docs.rs/gltf_legacy/badge.svg)](https://docs.rs/gltf_legacy)
+[![Build Status](https://travis-ci.org/alteous/gltf-legacy.svg?branch=master)](https://travis-ci.org/alteous/gltf-legacy)
+[![crates.io](https://img.shields.io/crates/v/gltf-legacy.svg)](https://crates.io/crates/gltf-legacy)
+[![docs.rs](https://docs.rs/gltf-legacy/badge.svg)](https://docs.rs/gltf-legacy)
 
-### [Documentation](https://docs.rs/gltf_legacy)
+### [Documentation](https://docs.rs/gltf-legacy)
 
 ### Usage
 
-Add `gltf_legacy` to the dependencies section of `Cargo.toml`.
+Add `gltf-legacy` to the dependencies section of `Cargo.toml`.
 
 ```toml
 [dependencies]
-gltf_legacy = "0.1"
+gltf-legacy = "0.1"
 ```
 Import some glTF 1.0.
 
@@ -41,7 +41,7 @@ Enabling the `KHR_binary_glTF` extension.
 
 ```toml
 [dependencies]
-gltf_legacy = { version = "0.1", features = ["KHR_binary_glTF"] }
+gltf-legacy = { version = "0.1", features = ["KHR_binary_glTF"] }
 ```
 
 ### Extras
@@ -50,17 +50,17 @@ By default all `extras` included with glTF assets are ignored. You can negate th
 
 ```toml
 [dependencies]
-gltf_legacy = { version = "0.1", features = ["extras"] }
+gltf-legacy = { version = "0.1", features = ["extras"] }
 ```
 
 ### Examples
 
-#### gltf_display
+#### gltf-display
 
 If you want to see how the structure of the glTF file is deserialized, you can
 use the example here to poke at it.
 
 ```sh
-cargo run --example gltf_display Example.gltf
+cargo run --example gltf-display Example.gltf
 ```
 
